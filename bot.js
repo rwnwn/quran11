@@ -156,7 +156,7 @@ client.on("message", message => {
     }
     voiceChannel.join()
       .then(connnection => {
-        let stream = yt('https://www.youtube.com/watch?v=IEC8wi6wpGg', {audioonly: true});
+        let stream = ytdl('https://www.youtube.com/watch?v=IEC8wi6wpGg', {audioonly: true});
         const dispatcher = connnection.playStream(stream);
       });
   }
@@ -169,7 +169,7 @@ client.on("message", message => {
     }
     voiceChannel.join()
       .then(connnection => {
-        let stream = yt('https://www.youtube.com/watch?v=cjmh_-4VY9I', {audioonly: true});
+        let stream = ytdl('https://www.youtube.com/watch?v=cjmh_-4VY9I', {audioonly: true});
         const dispatcher = connnection.playStream(stream);
       });
   }
