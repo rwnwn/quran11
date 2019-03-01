@@ -476,4 +476,5 @@ client.on("message", message => {
 });
  
 // by Abo khalil - صدقة جارية
-client.login('Your Token');
+
+client.login(process.env.BOT_TOKEN);
